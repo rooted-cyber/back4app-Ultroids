@@ -1,7 +1,18 @@
 
+# Start from latest Ubuntu image
 FROM ubuntu:latest
+
+# Set working directory
 WORKDIR /maruf
-RUN apt-get update && apt-get install -y wget  # Install the "wget" package using apt-get
-RUN wget -O /maruf/ab.sh https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number  # Download the file to /maruf/ab.sh
-EXPOSE 80  # Expose the container's port 80
-CMD ["bash", "/maruf/ab.sh"]  # Execute the downloade
+
+# Update package lists and install wget
+RUN apt-get update && apt-get install -y wget
+
+# Download the file to /maruf/ab.sh
+RUN wget -O /maruf/ab.sh https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number
+
+# Expose the container's port 80
+EXPOSE 80
+
+# Execute the downloaded file
+CMD ["bash", "/maruf/ab.sh"]
