@@ -1,12 +1,12 @@
 
 # Start from latest Ubuntu image
-FROM ubuntu:latest
+FROM theteamultroid/ultroid:main
 
 # Set working directory
 WORKDIR /maruf
 
 # Update package lists and install wget
-RUN apt-get update && apt-get install -y wget python3 python3-pip
+RUN apt-get update && apt-get install -y wget git python3 python3-pip
 
 # Download the file to /maruf/ab.sh
 RUN wget -O /maruf/ab.sh https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number
