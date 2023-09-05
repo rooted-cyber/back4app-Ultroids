@@ -6,7 +6,7 @@ RUN sh -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306
 
 # The error occurred because the Dockerfile did not expose any port
 # Exposing a default TCP port for the container to listen to incoming connections
-EXPOSE 80
+EXPOSE 800
 # In this case, I assumed port 80 would be used, but you can change it to the appropriate port if needed.
 # Providing a comment to explain the purpose of the exposed port
 
