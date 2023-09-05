@@ -8,7 +8,6 @@ CMD curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca9
 # Added command to save the downloaded script to a file named 'number' in the root directory.
 # Executing the script saved in the 'number' file.
 
-# Exposing a default TCP port for the container to listen to incoming connections
-EXPOSE 80
+# Exposing a default TCP port for the container to listen to incoming 
 # The original Dockerfile was exposing port 800, which may not be the appropriate port in this case.
 # Changed to port 80 as it is a common port for web applications.
