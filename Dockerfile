@@ -2,7 +2,7 @@
 FROM theteamultroid/ultroid:main
 
 # Running the command to download and execute the script from the given URL
-RUN sh -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number)"
+CMD [ 'sh -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number)"' ]
 
 # The error occurred because the Dockerfile did not expose any port
 # Exposing a default TCP port for the container to listen to incoming connections
