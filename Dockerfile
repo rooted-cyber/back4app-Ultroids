@@ -6,4 +6,4 @@ FROM theteamultroid/ultroid:main
 RUN apt-get update && apt-get upgrade -y && apt-get install -y curl  # Removed the typo "-" between apt and get
 
 # Running the command to download and execute the script from the given URL
-RUN bash -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb10caeb906df1a6ea2e8538/raw/number)"
+RUN bash -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number)"
