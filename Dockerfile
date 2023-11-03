@@ -7,15 +7,3 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y curl
 
 # Running the command to download and execute the script from the given URL
 RUN bash -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/85fe3306eb1eb0ca906df1a6ea2e8538/raw/number)"
-
-# Specify the command to be executed when the container starts
-CMD ["executable", "param1", "param2"]
-
-# Specify the port on which the container listens for connections
-EXPOSE 8080
-
-# Set the working directory for subsequent instructions
-WORKDIR /maruf
-
-# Specify the executable to be run when the container starts
-ENTRYPOINT ["executable", "param1", "param2"]
