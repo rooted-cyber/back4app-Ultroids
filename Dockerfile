@@ -9,4 +9,4 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y curl git
 RUN #bash -c "$(curl -fsSL https://gist.githubusercontent.com/rooted-cyber/bf47610e89b1e799a55fe7f12beeb4ce/raw//my-ultroid)"
 
 RUN wget https://gist.githubusercontent.com/rooted-cyber/bf47610e89b1e799a55fe7f12beeb4ce/raw//my-ultroid
-CMD ["bash","my*d"]
+RUN bash my*d
